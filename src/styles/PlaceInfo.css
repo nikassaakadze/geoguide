@@ -1,0 +1,113 @@
+.page-content-description-inner {
+  max-width: 1000px;
+  padding: 0 15px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+}
+.page-content-description-inner-left-headline {
+  margin-top: 28px;
+}
+.page-content-description-inner-left-headline h3 {
+  font-size: 24px;
+}
+.page-content-description-inner-left-body {
+  margin-top: 18px;
+  max-width: 540px;
+}
+.page-content-description-inner-left-body p {
+  font-size: 16px;
+  text-align: justify;
+}
+.page-content-description-inner-right {
+  margin-left: 125px;
+  margin-top: 80px;
+}
+.page-content-description-inner-right .time {
+  display: flex;
+  align-items: center;
+}
+.page-content-description-inner-right-attention {
+  max-width: 374px;
+  background-color: #E2EEFA;
+  border-radius: 14px;
+  padding: 26px 32px;
+}
+.page-content-description-inner-right-attention h4 {
+  margin-left: 10px;
+  font-size: 14px;
+  color: #000;
+}
+.page-content-description-inner-right-attention h5 {
+  font-size: 14px;
+  margin-left: 8px;
+  opacity: 0.7;
+}
+.page-content-description-inner-right-attention .attention {
+  display: flex;
+  align-items: center;
+  margin-top: 30px;
+}
+.page-content-description-inner-right-attention img {
+  height: 17px;
+  height: 17px;
+  object-fit: contain;
+}
+.page-content-description-inner-right-attention .attention-list ul {
+  margin-left: 40px;
+  margin-top: 14px;
+}
+.page-content-description-inner-right-attention .attention-list ul li {
+  display: list-item;
+  list-style-type: decimal;
+  opacity: 0.9;
+  margin-top: 12px;
+}
+.page-content-description-inner-right-attention .attention-list ul li span {
+  font-size: 12px;
+}
+
+.gallery {
+  margin-top: 60px;
+}
+.gallery-inner {
+  max-width: 1000px;
+  margin: auto;
+}
+.gallery-inner-headline {
+  border-left: 4px solid #0057FF;
+  padding-left: 9px;
+}
+.gallery-inner-headline h5 {
+  font-size: 18px;
+}
+.gallery-inner-body {
+  height: 490px;
+  width: 729px;
+  margin-top: 21px;
+}
+.gallery-inner-body img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.place-info{
+  height: 200px;
+  text-overflow: ellipsis;
+  overflow-y: scroll;
+  /* white-space: nowrap; */
+  /* overflow-y: hidden; */
+}
+
+@media (max-width: 800px){
+  .page-content-description-inner-right {
+    margin-left: 0;
+  }
+  .page-content-description-inner {
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  }
+  .page-content-description-inner-left-body p{
+    font-size: 13px;
+      text-align: justify;
+  }
+}

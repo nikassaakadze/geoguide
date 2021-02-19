@@ -1,0 +1,70 @@
+header {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background-color: white;
+  border-bottom: 2px solid rgba(0, 0, 0, 0.1);
+}
+header .header-inner {
+  max-width: 1000px;
+  margin: auto;
+  padding: 0 15px;
+  display: flex;
+  align-items: center;
+  height: 60px;
+  justify-content: space-between;
+}
+header .header-inner-left {
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+header .header-inner-left-logo h3, header .header-inner-left-logo strong {
+  font-family: inter;
+}
+.header-inner-left-logo h3 strong{
+  font-weight: bold !important;
+}
+header .header-inner-left-logo h3 {
+  font-weight: lighter;
+  color: black;
+  font-size: 18px;
+  margin-bottom: 0;
+}
+header .header-inner-right {
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+header .header-inner-right-navlist {
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+header .header-inner-right-navlist ul :last-child {
+  margin-right: 0;
+}
+header .header-inner-right-navlist ul{
+	display: flex;
+  align-items: center;
+}
+header .header-inner-right-navlist ul li {
+  margin-right: 34px;
+}
+header .header-inner-right-navlist ul li a {
+  font-size: 14px;
+  color: #000;
+}
+
+.responsive-navBurger{
+	display: none;
+}
+
+@media (max-width: 800px){
+	header .header-inner-right-navlist{
+		display: none;
+	}
+	.responsive-navBurger{
+	display: block;
+}
+}

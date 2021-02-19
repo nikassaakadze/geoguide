@@ -1,0 +1,111 @@
+.popularPlaces {
+  margin-top: 63px;
+}
+.popularPlaces-inner {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+.popularPlaces-inner-headline{
+  margin-bottom: 27px;
+}
+.popularPlaces-inner h2 {
+  font-size: 18px;
+  border-left: 3px solid #0057FF;
+  padding-left: 9px;
+  /* margin-bottom: 27px; */
+}
+.morePlaces{
+  display: flex;
+  align-items: center;
+}
+.brdc{
+  font-size: 20px !important;
+  color: #0057FF;
+}
+.morePlaces span{
+  font-size: 14px;
+  color: #0057FF;
+}
+.popularPlaces-inner-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+  grid-gap: 1rem;
+}
+.popularPlaces-inner-headline{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.popularPlaces-inner-grid-item {
+  width: 100%;
+  max-width: 230px;
+  /* box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.253); */
+
+}
+.popularPlaces-inner-grid-item-cover {
+  height: 292px;
+  width: 100%;
+  overflow: hidden;
+}
+.popularPlaces-inner-grid-item-cover img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: .3s
+}
+.popularPlaces-inner-grid-item-cover img:hover{
+  transform: scale(1.5);
+  transition: .3s
+}
+.popularPlaces-inner-grid-item-footer h3 {
+  font-size: 16px;
+  margin-top: 16px;
+  font-weight: bold !important;
+}
+.popularPlaces-inner-grid-item-footer p {
+  font-size: 11px;
+  margin-top: 10px;
+  width: 230px;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
+.popularPlaces-inner-grid-item-footer li {
+  display: flex;
+  align-items: center;
+  margin-top: 16px;
+}
+.popularPlaces-inner-grid-item-footer .seeFullBtn {
+  width: 114px;
+  height: 34px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #D3E2FF;
+  border-radius: 12px;
+  font-size: 11px;
+  font-weight: bold;
+  color: #0057FF;
+}
+.popularPlaces-inner-grid-item-footer .itemLocation {
+  width: 34px;
+  height: 34px;
+  background-color: #D3E2FF;
+  border-radius: 12px;
+  background-repeat: no-repeat;
+  border: 0;
+  margin-left: 12px;
+  cursor: pointer;
+}
+.itemLocation svg path{
+  fill: #0057FF;
+}
+
+.popularPlaces-inner-grid-item-footer h3{
+  width: 100%;
+  width: 230px;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}

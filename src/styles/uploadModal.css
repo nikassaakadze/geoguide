@@ -1,0 +1,53 @@
+.fieldsRow{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+.modalFieldInput{
+    height: 48px;
+    margin-top: 7px;
+}
+.uploadModal__content .ant-select{
+    width: 100% !important;
+    margin-bottom: 10px;
+    margin-bottom: 20px;
+}
+.modalFieldLabel{
+    font-size: 14px;
+    font-weight: 700;
+    margin-top: 20px;
+}
+
+.fieldCol-lat{
+    width: 40%;
+    margin-left: 40px;
+}
+.fieldCol-long{
+    width: 40%;
+}
+.ant-modal-footer{
+ display: none;
+}
+.ant-modal-body{
+    padding: 10px 24px !important;
+}
+.uploadModalButton{
+    display: flex;
+    align-items: center;
+    background: #0057FF;
+    border-radius: 10px;
+    width: 131px;
+    height: 40px;
+    justify-content: center;
+    border: none;
+    color: white !important;
+    cursor: pointer;
+}
+.openModal{
+    width: 110px !important;
+    height: 30px !important;
+}
+.openModal span, .MuiSvgIcon-root{
+
+    font-size: 13px !important;
+}

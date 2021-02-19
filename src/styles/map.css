@@ -1,0 +1,158 @@
+.map-places{
+  position: fixed;
+  width: 100%;
+  height: 1000%;
+  left: 0;
+  right: 0;
+  top: 60px;
+  bottom: 0;
+}
+.map-places-area-sidebar{
+  /* display: none; */
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 30%;
+  overflow-y: auto;
+  background-color: whitesmoke;
+  height: 100vh;
+  overflow-y: scroll;
+}
+.sidebav-header{
+  width: 100%;
+  height: 50px;
+  align-items: center;
+  background-color: teal;
+  color: white;
+  display: flex;
+  justify-content: center;
+}
+.sidebav-header h4{
+  color: white !important;
+  margin-bottom: 0 !important;
+}
+.places-row-grid{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-gap: 1rem;
+  padding: 20px 10px 100px 10px;
+}
+::-webkit-scrollbar {
+  width: 2px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #ffffff; 
+  width: 1px;
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: teal;
+  width: 1px;
+}
+.place-for-map{
+  /* width: 100%; */
+  box-shadow: 0px 0px 5px 0px rgba(151, 151, 151, 0.75);
+  padding: 10px;
+}
+.place-for-map-footer{
+  display: flex;
+  flex-direction: column;
+}
+.place-for-map-footer span{
+  margin: 15px 0 0 0;
+}
+.see-place-btn{
+  display: flex;
+  align-items: center;
+  width: 160px;
+  height: 42px;
+  background-color: #5991ff;
+  border-radius: 16px;
+  justify-content: center;
+  border: none;
+  cursor: pointer;
+  margin: 15px 0;
+  color: white;
+}
+.place-for-map-hero{
+  height: 300px;
+}
+.place-for-map-hero img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.place-description-inner{
+  width: 250px;
+  background-color: white;
+  box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.75);
+  border-radius: 10px;
+}
+.place-name{
+  padding: 10px;
+  color: #333;
+  font-size: 17px;
+}
+.place-hero{
+  width: 100%;
+}
+.place-hero img{
+  width: 100%;
+  height: 190px;
+  object-fit: cover;
+}
+.place-info{
+  padding: 10px;
+
+  text-align: justify;
+}
+.place-info p{
+  word-spacing: 0;
+}
+.place-marker{
+  width: 100%;
+  text-align: center;
+}
+.placeholder{
+  padding-top: 30px;
+}
+.mapboxgl-popup-anchor-top .mapboxgl-popup-tip{
+  display: none !important;
+}
+.sidenameSVG{
+  display: none;
+}
+.sideSVG:hover .sidenameSVG{
+  display: block;
+}
+
+.map__locations{
+  left: 30%;
+  position: absolute;
+  z-index: 1000;
+  margin: 20px;
+}
+.myLocation{
+  display: flex;
+  align-items: center;
+  min-height: 48px;
+width: 298px;
+background: white;
+margin-top: 4px;
+
+}
+.locIcon{
+  margin-left: 8px;
+  position: relative;
+  top: 3px;
+}
+.myLocation span{
+  font-size: 17px;
+  font-weight: bold;
+  margin-left: 15px;
+}

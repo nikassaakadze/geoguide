@@ -1,0 +1,158 @@
+@font-face{
+	font-family: notoSansGeorgian;
+	src: url("./font/nsgr.ttf");
+}
+@font-face{
+	font-family: inter;
+	src: url("./font/il.ttf");
+}
+@font-face{
+	font-family: notoSansGeorgianBold;
+	src: url("./font/nsgb.ttf");
+}
+*{
+	font-family: notoSansGeorgian;
+	margin: 0;
+	padding: 0;
+}
+strong{
+	font-weight: bolder !important;
+}
+
+a{
+	text-decoration: none;
+}
+li{
+	list-style: none;
+}
+button, input{
+	outline: 0;
+}
+ul{
+	margin: 0 !important ;
+	padding: 0 !important;
+}
+.loading{
+	width: 100%;
+	height: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.testRow{
+	max-width: 550px;
+	margin: 10px auto;
+	display: flex;
+	flex-direction: column;
+}
+
+
+.choose{
+	max-width: 550px;
+	margin: 10px auto;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	background-color: rgb(255, 108, 108);
+	padding: 10px;
+}
+.choose h3{
+	font-size: 13px;
+}
+
+.pannel-header{
+	background-color: #333;
+}
+.pannel-header-inner{
+	max-width: 1300px;
+	margin: auto;
+	padding: 15px;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+.user{
+	display: flex;
+	align-items: center;
+}
+.user h4{
+	color: white;
+	font-size: 20px;
+	margin-left: 10px;
+	padding: 0;
+	margin: 0 0 0 10px;
+	font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.logout{
+	display: flex;
+	align-items: center;
+}
+.logout a{
+	color: white;
+	font-size: 18px;
+	display: flex;
+	align-items: center;
+}
+.logout a span{
+	margin-right: 10px;
+}
+.auth-wrapper{
+	position: fixed;
+	top: 0;
+	bottom: 0;
+	right: 0;
+	left: 0;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.auth{
+	display: flex;
+	flex-direction: column;
+	width: 30%;
+	background-color: #D3E2FF;
+	border: 1px solid #85adff;
+	padding: 15px;
+	border-radius: 8px;
+	text-align: center;
+}
+.auth input{
+	padding: 15px 20px;
+	margin: 15px 0;
+	border: 1px solid #85adff;
+}
+.auth small{
+	display: flex;
+	align-items: center;
+	margin: auto;
+}
+.auth small svg{
+	margin-left: 10px;
+}
+.icon{
+	width: 100%;
+	text-align: center;
+	padding: 15px;
+}
+.auth button{
+	padding: 15px 20px;
+	margin: 15px 0;
+	background: #85adff;
+	color: #ffffff;
+	border: none;
+	box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.301);
+	cursor: pointer;
+	font-size: 17px;
+}
+
+.mapboxgl-popup-content{
+	background: none;
+	border: none;
+	box-shadow:none;
+	padding: 0;
+}
+
+h1, h2, h3, h4, h5, h6{
+	margin-bottom: 0;
+}

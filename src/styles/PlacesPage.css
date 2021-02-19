@@ -1,0 +1,57 @@
+.breadCrumb{
+  max-width: 80%;
+  padding: 0 15px;
+  margin: 26px auto;
+  display: flex;
+  align-items: center;
+}
+.currentBlurred{
+  opacity: .6;
+}
+.places-list-col{
+  width: 20%;
+}
+.places-list-item{
+  width: 100%;
+  height: 60px !important;
+  background: #E2EEFA;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 10px 18px;
+  margin-top: 2px;
+  color: #000;
+}
+.active{
+  width: 100%;
+  height: 60px !important;
+  background: #a9bdd1;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 10px 18px;
+  margin-top: 2px;
+  color: #000;
+}
+.places-wrapper-inner{
+  display: flex;
+  max-width: 80%;
+  padding: 0 15px;
+  margin: auto;
+  justify-content: space-between;
+}
+.places-row{
+  width: 75%;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+  grid-gap: 1rem;
+}
+.places-row .popularPlaces-inner-headline{
+  display: none;
+}
+.places-row .popularPlaces{
+  margin-top: 0;
+}
+.places-row  .popularPlaces-inner{
+  max-width: 100% !important;
+}
