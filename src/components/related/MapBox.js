@@ -5,13 +5,14 @@ import ReactMapboxGl from "react-mapbox-gl";
 import "mapbox-gl/dist/mapbox-gl.css";
 import placeholder from "../../icons/marker2.png";
 import { useParams } from "react-router-dom";
+import {db} from '../../util/firebase'
 
 const Map = ReactMapboxGl({
   accessToken:
     "pk.eyJ1IjoiYm9tdGFrYXRhIiwiYSI6ImNrNmt6ZmJvMzA4ejAzcnA2Y2N6aGdkdGgifQ.5itrZsf_kX9Rnw4kSep5ZQ",
 });
 
-function MapBox({ place }) {
+function MapBox({ place, sideId }) {
   // props
   const { placeId } = useParams();
   // States
@@ -51,15 +52,15 @@ function MapBox({ place }) {
       <div className="myLocation">
         <div className="locIcon">
         <svg width="20" height="28" viewBox="0 0 20 28" fill="none" xmlns="http://www.w3.org/2000/svg">
-<circle cx="10" cy="10" r="10" fill="#0057FF"/>
-<path fill-rule="evenodd" clip-rule="evenodd" d="M9 19V28H11V19H9Z" fill="#0057FF"/>
-</svg>
+        <circle cx="10" cy="10" r="10" fill="#0057FF"/>
+        <path fill-rule="evenodd" clip-rule="evenodd" d="M9 19V28H11V19H9Z" fill="#0057FF"/>
+        </svg>
         </div>
         <span>{placeCrumb}</span>
       </div>
     </div>
       <Map
-        style="mapbox://styles/mapbox/satellite-v9"
+        style="mapbox://styles/mapbox/streets-v9"
         containerStyle={{
           height: "100vh",
           width: "70%",
@@ -69,16 +70,13 @@ function MapBox({ place }) {
         zoom={[15]}
         center={location}
       >
-        {place.map((item) => {
-          return (
-            <Marker
-              coordinates={[showPopup.longit, showPopup.latit]}
-              anchor="bottom"
-            >
-              <img src={placeholder} width="50" alt={"logo"} />
-            </Marker>
-          );
-        })}
+      {
+        place?.map(item => (
+          <Marker coordinates={[item.place.longit, item.place.latit]} anchor="bottom" >
+          <img src={placeholder} width="50" alt={"logo"} />
+        </Marker>
+        ))
+      }
         {showPopup.show && (
           <Popup
             coordinates={[showPopup.longit, showPopup.latit]}

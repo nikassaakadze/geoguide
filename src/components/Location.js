@@ -26,7 +26,7 @@ export default function Location() {
     <div className="map-places">
       <div className="map-places-area">
         <PlacesRow />
-        {place.length !== 0 ? <MapBox place={place}></MapBox> : ("")}
+        {place.length !== 0 ? <MapBox sideId={sideId} place={place}></MapBox> : ("")}
       </div>
     </div>
   );
